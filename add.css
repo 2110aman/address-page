@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.checkout-page-body{
+    width: 100%;
+    height: 500vmax;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-title-box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.checkout-page{
+    width: 100%;
+    height: 100vmax;
+    padding: 0 25px;
+    display: flex;
+}
+
+.checkout-page-left{
+    width: 63%;
+    height: 100vmax;
+}
+
+.checkout-page-right{
+    width: 37%;
+    height: 100vmax;
+}
+
+.contact-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.contact-box-title{
+    font-size: 1.5rem;
+}
+
+.contact-box-email{
+    width: 100%;
+    padding:0 10px;
+}
+
+.contact-box-email-box{
+    width: 100%;
+  
+}
+
+.contact-box-email-box input{
+    width: 49%;
+    height: 48px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+.contact-box-phone{
+    width: 100%;
+    padding:0 10px;
+}
+
+
+.contact-box-phone-box{
+    width: 100%;
+}
+
+.contact-box-phone-box input{
+    width: 49%;
+    height: 48px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+
+/* address box css */
+
+.address-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; 
+    padding: 5px 0;
+}
+
+.address-box-title{
+    font-size: 1.5rem;
+}
+
+.address-box-1 ,.address-box-2{
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+.address-box-1 {
+    display: flex;
+    gap: 5px;
+}
+
+.address-box-1 input,select{
+    width: 49%;
+    height: 48px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+
+.address-box-2 input{
+    width: 98.5%;
+    height:48px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+}
+
+.Country{
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+.checkout-button {
+    width: 100%;
+    text-align: center;
+}
+
+.checkout-button button{
+    width: 50%;
+    height: 48px;
+    color: white;
+    font-size: 1.1rem;
+    background-color: black;
+}
+
+
+/* responsiveness */
+
+@media (max-width: 974px) {
+    .checkout-page-right{
+        display: none;
+    }
+
+    .checkout-page-left{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 666px){
+    .address-box-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-box-email-box input{
+        width: 100%;
+    }
+
+    .contact-box-phone-box input{
+        width: 100%;
+    }
+    .address-box-1 input,select{
+        width: 100%;
+    }
+    .address-box-2 input{
+        width: 100%;
+    }
+  }
+
+  @media (max-width: 575px){
+
+  .checkout-page{
+    
+    padding: 0 15px;
+    
+}
+  }
+  
+
